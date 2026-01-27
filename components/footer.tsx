@@ -42,7 +42,7 @@ const footerLinks = [
   { href: "#home", label: "Inicio" },
   { href: "#about", label: "Nosotros" },
   { href: "#services", label: "Servicios" },
-  { href: "#location", label: "Ubicacion" },
+  { href: "#location", label: "Ubicación" },
 ]
 
 export function Footer() {
@@ -91,8 +91,8 @@ export function Footer() {
             <h4 className="mb-4 text-lg font-bold text-accent">Contacto</h4>
             <ul className="space-y-4">
               <li>
-                <a 
-                  href="tel:+56968286054" 
+                <a
+                  href="tel:+56968286054"
                   className="flex items-center gap-3 transition-colors hover:text-accent"
                 >
                   <span className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-primary/10">
@@ -102,8 +102,8 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a 
-                  href="mailto:contacto@smilewithme.cl" 
+                <a
+                  href="mailto:contacto@smilewithme.cl"
                   className="flex items-center gap-3 transition-colors hover:text-accent"
                 >
                   <span className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-primary/10">
@@ -186,8 +186,8 @@ export function Footer() {
             <ul className="grid grid-cols-2 gap-2 text-sm sm:grid-cols-1 sm:text-base">
               {footerLinks.map((link) => (
                 <li key={link.href}>
-                  <a 
-                    href={link.href} 
+                  <a
+                    href={link.href}
                     onClick={(e) => handleNavClick(e, link.href)}
                     className="transition-colors hover:text-accent"
                   >

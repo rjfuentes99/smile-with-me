@@ -12,7 +12,7 @@ const navLinks = [
   { href: "#home", label: "Inicio" },
   { href: "#about", label: "Nosotros" },
   { href: "#services", label: "Servicios" },
-  { href: "#location", label: "Ubicacion" },
+  { href: "#location", label: "Ubicación" },
   { href: "#contact", label: "Contacto" },
 ]
 
@@ -40,16 +40,15 @@ export function Navbar() {
   }
 
   return (
-    <nav 
-      className={`sticky top-0 z-50 transition-all duration-300 ${
-        isScrolled 
-          ? "bg-background/95 shadow-md backdrop-blur-sm" 
+    <nav
+      className={`sticky top-0 z-50 transition-all duration-300 ${isScrolled
+          ? "bg-background/95 shadow-md backdrop-blur-sm"
           : "bg-transparent"
-      }`}
+        }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 md:py-4">
-        <Link 
-          href="#home" 
+        <Link
+          href="#home"
           className="flex-shrink-0 transition-transform hover:scale-105"
           onClick={(e) => handleNavClick(e, "#home")}
         >
@@ -105,10 +104,9 @@ export function Navbar() {
       </div>
 
       {/* Mobile Menu */}
-      <div 
-        className={`absolute left-0 right-0 top-full z-50 overflow-hidden bg-background shadow-lg transition-all duration-300 lg:hidden ${
-          mobileMenuOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
-        }`}
+      <div
+        className={`absolute left-0 right-0 top-full z-50 overflow-hidden bg-background shadow-lg transition-all duration-300 lg:hidden ${mobileMenuOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+          }`}
       >
         <ul className="flex flex-col gap-1 p-4">
           {navLinks.map((link) => (

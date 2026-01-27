@@ -7,7 +7,7 @@ const services = [
   {
     title: "Odontologia General",
     description: "Cuidado integral de tu salud bucal",
-    image: "/images/odontogeneral.png",
+    image: "/images/i.jpg",
     color: "bg-primary",
   },
   {
@@ -84,16 +84,15 @@ export function Services() {
               onMouseLeave={() => setHoveredIndex(null)}
             >
               <div
-                className={`mb-4 flex aspect-square items-center justify-center overflow-hidden rounded-xl ${service.color} transition-all duration-300 ${
-                  hoveredIndex === index ? "scale-105 shadow-lg" : ""
-                }`}
+                className={`mb-4 flex aspect-square items-center justify-center overflow-hidden rounded-xl ${service.color} transition-all duration-300 ${hoveredIndex === index ? "scale-105 shadow-lg" : ""
+                  }`}
               >
                 <Image
                   src={service.image || "/placeholder.svg"}
                   alt={service.title}
                   width={200}
                   height={200}
-                  className="h-3/4 w-3/4 object-contain transition-transform duration-300 group-hover:scale-110"
+                  className="h-[200px] w-[200px] rounded-full object-cover transition-transform duration-300 group-hover:scale-110"
                 />
               </div>
               <h3 className="mb-1 text-center text-sm font-bold text-foreground sm:text-base md:text-lg">
