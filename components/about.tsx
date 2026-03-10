@@ -8,7 +8,7 @@ const features = [
   {
     icon: Target,
     title: "Nuestra Mision",
-    description: "En Smile With Me, nuestra mision es proporcionar atencion dental de alta calidad a nuestros pacientes. Nos dedicamos a crear un ambiente acogedor y profesional donde cada visita sea una experiencia positiva."
+    description: "En Smile With Me, nuestra mision es proporcionar atención dental de alta calidad a nuestros pacientes. Nos dedicamos a crear un ambiente acogedor y profesional donde cada visita sea una experiencia positiva."
   },
   {
     icon: Users,
@@ -50,10 +50,10 @@ export function About() {
             <h2 className="mb-8 text-balance text-3xl font-bold text-foreground md:text-4xl lg:text-5xl">
               Acerca de <span className="text-accent">Nosotros</span>
             </h2>
-            
+
             <div className="space-y-6">
               {features.map((feature, index) => (
-                <div 
+                <div
                   key={index}
                   className="hover-lift group rounded-xl border border-border/50 bg-card/50 p-5 transition-all duration-300 hover:border-accent/30 hover:bg-card"
                 >
@@ -74,7 +74,7 @@ export function About() {
               asChild
               className="mt-8 rounded-full bg-accent px-8 py-6 text-accent-foreground shadow-lg transition-all hover:bg-accent/90 hover:shadow-xl"
             >
-              <a 
+              <a
                 href={APPOINTMENT_URL}
                 target="_blank"
                 rel="noopener noreferrer"

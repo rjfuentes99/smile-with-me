@@ -20,16 +20,16 @@ export function Hero() {
           </h1>
           <p className="animate-fade-in-up animation-delay-100 mb-8 max-w-xl text-base leading-relaxed text-foreground/80 sm:text-lg lg:mx-0">
             Tu sonrisa es nuestra prioridad. En nuestra clinica dental, nos
-            comprometemos a ofrecerte una atencion personalizada y de calidad,
+            comprometemos a ofrecerte una atención personalizada y de calidad,
             donde tu comodidad y satisfaccion son fundamentales en cada visita.
           </p>
           <div className="animate-fade-in-up animation-delay-200 flex flex-col gap-4 sm:flex-row sm:justify-center lg:justify-start">
-            <Button 
+            <Button
               asChild
               size="lg"
               className="rounded-full bg-accent px-8 py-6 text-base text-accent-foreground shadow-lg transition-all hover:bg-accent/90 hover:shadow-xl"
             >
-              <a 
+              <a
                 href={APPOINTMENT_URL}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -38,7 +38,7 @@ export function Hero() {
                 Agenda tu cita
               </a>
             </Button>
-            <Button 
+            <Button
               asChild
               variant="outline"
               size="lg"
@@ -85,7 +85,7 @@ export function Hero() {
                 <span className="mt-0.5 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-accent/10">
                   <Check className="h-3 w-3 text-accent" />
                 </span>
-                <span className="text-sm">Atencion de calidad</span>
+                <span className="text-sm">Atención de calidad</span>
               </li>
               <li className="flex items-start gap-3 text-foreground">
                 <span className="mt-0.5 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-accent/10">
