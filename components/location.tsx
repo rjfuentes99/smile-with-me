@@ -12,10 +12,10 @@ export function Location() {
             Visitanos
           </span>
           <h2 className="mb-4 text-balance text-3xl font-bold text-foreground md:text-4xl lg:text-5xl">
-            Nuestra <span className="text-accent">Ubicación</span>
+            Nuestra <span className="text-accent">Ubicacion</span>
           </h2>
           <p className="mx-auto max-w-2xl text-base text-foreground/80 md:text-lg">
-            Visitanos en nuestra clinica ubicada en el corazon de Nuñoa, Santiago
+            Visitanos en nuestra clinica ubicada en el corazon de Nunoa, Santiago
           </p>
         </div>
 
@@ -30,7 +30,7 @@ export function Location() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Ubicación de Smile With Me - Irarrazaval 2821, Nunoa"
+              title="Ubicacion de Smile With Me - Irarrazaval 2821, Nunoa"
               className="h-full min-h-[350px] w-full md:min-h-[400px]"
             />
           </div>
@@ -83,11 +83,11 @@ export function Location() {
               </div>
               <div>
                 <h3 className="mb-1 text-lg font-bold text-foreground">Contacto</h3>
-                <a
-                  href="https://api.whatsapp.com/send/?phone=56968286054&text&type=phone_number&app_absent=0"
+                <a 
+                  href="tel:+56912345678"
                   className="font-medium text-accent hover:underline"
                 >
-                  +56 9 6828 6054
+                  +56 9 1234 5678
                 </a>
               </div>
             </div>
