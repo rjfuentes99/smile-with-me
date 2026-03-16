@@ -1,8 +1,12 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { User, Check, Calendar, ArrowRight } from "lucide-react"
+import { User, Check, Calendar, ArrowRight, MessageCircle } from "lucide-react"
+import { WhatsAppButton } from "./whatsapp-button"
 
 const APPOINTMENT_URL = "https://a259348cdd801055c6e465fe356840cbf43cc129.agenda.softwaredentalink.com/agenda"
+const WHATSAPP_NUMBER = '+56968286054'
+const WHATSAPP_MESSAGE = 'Hola! Me interesa agendar una cita en Smile With Me Estudio Dental.'
+const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER.replace(/\D/g, '')}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`
 
 export function Hero() {
   return (
@@ -40,13 +44,16 @@ export function Hero() {
             </Button>
             <Button
               asChild
-              variant="outline"
               size="lg"
-              className="group rounded-full border-2 border-foreground/20 bg-transparent px-8 py-6 text-base text-foreground transition-all hover:border-accent hover:bg-accent/5 hover:text-accent"
+              className="rounded-full bg-green-500 px-8 py-6 text-base text-white shadow-lg transition-all hover:bg-green-600 hover:shadow-xl"
             >
-              <a href="#services">
-                Ver servicios
-                <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <MessageCircle className="mr-2 h-5 w-5" />
+                WhatsApp
               </a>
             </Button>
           </div>

@@ -44,9 +44,9 @@ const socialLinks = [
   },
   {
     name: "Facebook",
-    handle: "/smilewithme.cl",
+    handle: "Smile With Me",
     icon: FacebookIcon,
-    href: "https://facebook.com/smilewithme.cl",
+    href: "https://www.facebook.com/profile.php?id=61558048771952",
     gradient: "from-blue-600 to-blue-400",
     bgColor: "bg-blue-50",
     hoverBg: "group-hover:from-blue-600 group-hover:to-blue-400",

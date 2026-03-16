@@ -3,10 +3,13 @@
 import React from "react"
 
 import Image from "next/image"
-import { Phone, Mail, MapPin, Clock, Calendar, Instagram } from "lucide-react"
+import { Phone, Mail, MapPin, Clock, Calendar, Instagram, MessageCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const APPOINTMENT_URL = "https://a259348cdd801055c6e465fe356840cbf43cc129.agenda.softwaredentalink.com/agenda"
+const WHATSAPP_NUMBER = '+56968286054'
+const WHATSAPP_MESSAGE = 'Hola! Me interesa agendar una cita en Smile With Me Estudio Dental.'
+const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER.replace(/\D/g, '')}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`
 
 function FacebookIcon({ className }: { className?: string }) {
   return (
@@ -103,6 +106,19 @@ export function Footer() {
               </li>
               <li>
                 <a 
+                  href={WHATSAPP_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 transition-colors hover:text-accent"
+                >
+                  <span className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-primary/10">
+                    <MessageCircle className="h-5 w-5 text-accent" />
+                  </span>
+                  <span className="text-sm sm:text-base">WhatsApp</span>
+                </a>
+              </li>
+              <li>
+                <a 
                   href="mailto:contacto@smilewithme.cl" 
                   className="flex items-center gap-3 transition-colors hover:text-accent"
                 >
@@ -164,7 +180,7 @@ export function Footer() {
                 <Instagram className="h-5 w-5" />
               </a>
               <a
-                href="https://facebook.com/smilewithme.cl"
+                href="https://www.facebook.com/profile.php?id=61558048771952"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 transition-all hover:scale-110 hover:bg-accent"
