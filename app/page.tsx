@@ -6,6 +6,7 @@ import { Services } from "@/components/services"
 import { Location } from "@/components/location"
 import { SocialMedia } from "@/components/social-media"
 import { Footer } from "@/components/footer"
+import { WhatsAppFloatingButton } from "@/components/whatsapp-button"
 
 export default function Home() {
   return (
@@ -37,6 +38,9 @@ export default function Home() {
         {/* Footer */}
         <Footer />
       </main>
+      
+      {/* Floating WhatsApp Button */}
+      <WhatsAppFloatingButton />
     </>
   )
 }

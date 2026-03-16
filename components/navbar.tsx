@@ -5,7 +5,7 @@ import React from "react"
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { Menu, X, Calendar } from "lucide-react"
+import { Menu, X, Calendar, MessageCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const navLinks = [
@@ -17,6 +17,9 @@ const navLinks = [
 ]
 
 const APPOINTMENT_URL = "https://a259348cdd801055c6e465fe356840cbf43cc129.agenda.softwaredentalink.com/agenda"
+const WHATSAPP_NUMBER = '+56968286054'
+const WHATSAPP_MESSAGE = 'Hola! Me interesa agendar una cita en Smile With Me Estudio Dental.'
+const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER.replace(/\D/g, '')}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`
 
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -78,20 +81,35 @@ export function Navbar() {
           ))}
         </ul>
 
-        {/* CTA Button */}
-        <Button
-          asChild
-          className="hidden rounded-full bg-accent px-6 text-accent-foreground shadow-lg transition-all hover:bg-accent/90 hover:shadow-xl lg:inline-flex"
-        >
-          <a
-            href={APPOINTMENT_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+        {/* CTA Buttons */}
+        <div className="hidden items-center gap-2 lg:flex">
+          <Button
+            asChild
+            className="rounded-full bg-accent px-6 text-accent-foreground shadow-lg transition-all hover:bg-accent/90 hover:shadow-xl"
           >
-            <Calendar className="mr-2 h-4 w-4" />
-            Agenda tu cita
-          </a>
-        </Button>
+            <a
+              href={APPOINTMENT_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Calendar className="mr-2 h-4 w-4" />
+              Agenda tu cita
+            </a>
+          </Button>
+          <Button
+            asChild
+            className="rounded-full bg-green-500 px-6 text-white shadow-lg transition-all hover:bg-green-600 hover:shadow-xl"
+          >
+            <a
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <MessageCircle className="mr-2 h-4 w-4" />
+              WhatsApp
+            </a>
+          </Button>
+        </div>
 
         {/* Mobile Menu Button */}
         <button
@@ -122,10 +140,10 @@ export function Navbar() {
               </a>
             </li>
           ))}
-          <li className="mt-2">
+          <li className="mt-2 flex gap-2">
             <Button
               asChild
-              className="w-full rounded-full bg-accent text-accent-foreground hover:bg-accent/90"
+              className="flex-1 rounded-full bg-accent text-accent-foreground hover:bg-accent/90"
             >
               <a
                 href={APPOINTMENT_URL}
@@ -133,7 +151,20 @@ export function Navbar() {
                 rel="noopener noreferrer"
               >
                 <Calendar className="mr-2 h-4 w-4" />
-                Agenda tu cita
+                Cita
+              </a>
+            </Button>
+            <Button
+              asChild
+              className="flex-1 rounded-full bg-green-500 text-white hover:bg-green-600"
+            >
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <MessageCircle className="mr-2 h-4 w-4" />
+                WhatsApp
               </a>
             </Button>
           </li>
