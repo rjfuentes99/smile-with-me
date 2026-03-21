@@ -66,9 +66,9 @@ export function StatsBanner() {
   }, [])
 
   const stats = [
-    { value: "+10", label: "Anos de experiencia" },
-    { value: "100%", label: "Vuelves a sonreir" },
-    { value: "100%", label: "Satisfaccion del paciente" },
+    { value: "+15", label: "Años de experiencia" },
+    { value: "100%", label: "Vuelves a sonreír" },
+    { value: "100%", label: "Satisfacción del paciente" },
   ]
 
   return (
@@ -87,7 +87,7 @@ export function StatsBanner() {
           Smile With Me
         </h2>
         <p className="mb-10 text-lg text-background/90 md:text-xl">
-          Si tu sonrisa no te sienta bien, ven con nosotros!
+          Si tu sonrisa no te sienta bien, ¡ven con nosotros!
         </p>
 
         <div className="flex flex-col items-center justify-center gap-8 sm:flex-row sm:gap-12 md:gap-16 lg:gap-24">

@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button"
 
 const APPOINTMENT_URL = "https://a259348cdd801055c6e465fe356840cbf43cc129.agenda.softwaredentalink.com/agenda"
 const WHATSAPP_NUMBER = '+56968286054'
-const WHATSAPP_MESSAGE = 'Hola! Me interesa agendar una cita en Smile With Me Estudio Dental.'
+const WHATSAPP_MESSAGE = '¡Hola! Me interesa agendar una cita en Smile With Me Estudio Dental.'
 const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER.replace(/\D/g, '')}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`
 
 function FacebookIcon({ className }: { className?: string }) {
@@ -45,7 +45,7 @@ const footerLinks = [
   { href: "#home", label: "Inicio" },
   { href: "#about", label: "Nosotros" },
   { href: "#services", label: "Servicios" },
-  { href: "#location", label: "Ubicacion" },
+  { href: "#location", label: "Ubicación" },
 ]
 
 export function Footer() {
@@ -72,7 +72,7 @@ export function Footer() {
             />
             <p className="mb-6 text-sm leading-relaxed text-primary/80 sm:text-base">
               Tu sonrisa es nuestra prioridad. Cuidamos de tu salud bucal con
-              dedicacion y profesionalismo.
+              dedicación y profesionalismo.
             </p>
             <Button
               asChild
@@ -133,9 +133,9 @@ export function Footer() {
                   <MapPin className="h-5 w-5 text-accent" />
                 </span>
                 <span className="text-sm sm:text-base">
-                  Irarrazaval 2821, Of. 1404
+                  Irarrázaval 2821, Of. 1404
                   <br />
-                  Torre B, Nunoa
+                  Torre B, Ñuñoa
                 </span>
               </li>
             </ul>
@@ -159,7 +159,7 @@ export function Footer() {
                   <Clock className="h-5 w-5 text-accent" />
                 </span>
                 <div>
-                  <p className="font-medium">Sabado</p>
+                  <p className="font-medium">Sábado</p>
                   <p className="text-primary/70">9:00 - 14:00</p>
                 </div>
               </li>

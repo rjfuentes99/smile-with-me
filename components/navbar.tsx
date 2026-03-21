@@ -12,13 +12,13 @@ const navLinks = [
   { href: "#home", label: "Inicio" },
   { href: "#about", label: "Nosotros" },
   { href: "#services", label: "Servicios" },
-  { href: "#location", label: "Ubicacion" },
+  { href: "#location", label: "Ubicación" },
   { href: "#contact", label: "Contacto" },
 ]
 
 const APPOINTMENT_URL = "https://a259348cdd801055c6e465fe356840cbf43cc129.agenda.softwaredentalink.com/agenda"
 const WHATSAPP_NUMBER = '+56968286054'
-const WHATSAPP_MESSAGE = 'Hola! Me interesa agendar una cita en Smile With Me Estudio Dental.'
+const WHATSAPP_MESSAGE = '¡Hola! Me interesa agendar una cita en Smile With Me Estudio Dental.'
 const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER.replace(/\D/g, '')}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`
 
 export function Navbar() {

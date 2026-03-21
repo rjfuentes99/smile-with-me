@@ -5,7 +5,7 @@ import { WhatsAppButton } from "./whatsapp-button"
 
 const APPOINTMENT_URL = "https://a259348cdd801055c6e465fe356840cbf43cc129.agenda.softwaredentalink.com/agenda"
 const WHATSAPP_NUMBER = '+56968286054'
-const WHATSAPP_MESSAGE = 'Hola! Me interesa agendar una cita en Smile With Me Estudio Dental.'
+const WHATSAPP_MESSAGE = '¡Hola! Me interesa agendar una cita en Smile With Me Estudio Dental.'
 const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER.replace(/\D/g, '')}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`
 
 export function Hero() {
@@ -15,7 +15,7 @@ export function Hero() {
         {/* Content */}
         <div className="text-center lg:text-left">
           <span className="animate-fade-in mb-4 inline-block rounded-full bg-accent/10 px-4 py-2 text-sm font-medium text-accent">
-            Tu clinica dental de confianza
+            Tu clínica dental de confianza
           </span>
           <h1 className="animate-fade-in-up mb-6 text-balance text-4xl font-bold leading-tight text-foreground sm:text-5xl md:text-6xl">
             Los <span className="text-accent">mejores</span>
@@ -23,9 +23,9 @@ export function Hero() {
             para tu bienestar
           </h1>
           <p className="animate-fade-in-up animation-delay-100 mb-8 max-w-xl text-base leading-relaxed text-foreground/80 sm:text-lg lg:mx-0">
-            Tu sonrisa es nuestra prioridad. En nuestra clinica dental, nos
+            Tu sonrisa es nuestra prioridad. En nuestra clínica dental, nos
             comprometemos a ofrecerte una atención personalizada y de calidad,
-            donde tu comodidad y satisfaccion son fundamentales en cada visita.
+            donde tu comodidad y satisfacción son fundamentales en cada visita.
           </p>
           <div className="animate-fade-in-up animation-delay-200 flex flex-col gap-4 sm:flex-row sm:justify-center lg:justify-start">
             <Button

@@ -7,18 +7,18 @@ const APPOINTMENT_URL = "https://a259348cdd801055c6e465fe356840cbf43cc129.agenda
 const features = [
   {
     icon: Target,
-    title: "Nuestra Mision",
-    description: "En Smile With Me, nuestra mision es proporcionar atención dental de alta calidad a nuestros pacientes. Nos dedicamos a crear un ambiente acogedor y profesional donde cada visita sea una experiencia positiva."
+    title: "Nuestra Misión",
+    description: "En Smile With Me, nuestra misión es proporcionar atención dental de alta calidad a nuestros pacientes. Nos dedicamos a crear un ambiente acogedor y profesional donde cada visita sea una experiencia positiva."
   },
   {
     icon: Users,
     title: "Nuestro Equipo",
-    description: "Contamos con un equipo de dentistas y especialistas altamente capacitados en Smile With Me. Cada miembro de nuestro equipo esta comprometido con la formacion continua y el uso de las ultimas tecnologias dentales."
+    description: "Contamos con un equipo de dentistas y especialistas altamente capacitados en Smile With Me. Cada miembro de nuestro equipo está comprometido con la formación continua y el uso de las últimas tecnologías dentales."
   },
   {
     icon: Sparkles,
     title: "Servicios Ofrecidos",
-    description: "Ofrecemos una amplia gama de servicios dentales en Smile With Me, incluyendo limpieza dental, ortodoncia, y tratamientos de estetica dental. Nuestro objetivo es cuidar de su salud bucal con servicios personalizados para cada paciente."
+    description: "Ofrecemos una amplia gama de servicios dentales en Smile With Me, incluyendo limpieza dental, ortodoncia, y tratamientos de estética dental. Nuestro objetivo es cuidar de su salud bucal con servicios personalizados para cada paciente."
   }
 ]
 
@@ -45,7 +45,7 @@ export function About() {
           {/* Text Content */}
           <div>
             <span className="mb-2 inline-block text-sm font-semibold uppercase tracking-wider text-accent">
-              Conocenos
+              Conócenos
             </span>
             <h2 className="mb-8 text-balance text-3xl font-bold text-foreground md:text-4xl lg:text-5xl">
               Acerca de <span className="text-accent">Nosotros</span>
