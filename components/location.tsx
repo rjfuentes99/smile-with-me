@@ -9,13 +9,13 @@ export function Location() {
       <div className="mx-auto max-w-7xl px-4 md:px-6">
         <div className="mb-12 text-center">
           <span className="mb-2 inline-block text-sm font-semibold uppercase tracking-wider text-accent">
-            Visitanos
+            Visítanos
           </span>
           <h2 className="mb-4 text-balance text-3xl font-bold text-foreground md:text-4xl lg:text-5xl">
-            Nuestra <span className="text-accent">Ubicacion</span>
+            Nuestra <span className="text-accent">Ubicación</span>
           </h2>
           <p className="mx-auto max-w-2xl text-base text-foreground/80 md:text-lg">
-            Visitanos en nuestra clinica ubicada en el corazon de Nunoa, Santiago
+            Visítanos en nuestra clínica ubicada en el corazón de Ñuñoa, Santiago
           </p>
         </div>
 
@@ -30,7 +30,7 @@ export function Location() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Ubicacion de Smile With Me - Irarrazaval 2821, Nunoa"
+              title="Ubicación de Smile With Me - Irarrázaval 2821, Ñuñoa"
               className="h-full min-h-[350px] w-full md:min-h-[400px]"
             />
           </div>
@@ -43,12 +43,12 @@ export function Location() {
                 <MapPin className="h-6 w-6 text-accent" />
               </div>
               <div>
-                <h3 className="mb-1 text-lg font-bold text-foreground">Direccion</h3>
+                <h3 className="mb-1 text-lg font-bold text-foreground">Dirección</h3>
                 <p className="font-medium text-foreground">
-                  Irarrazaval 2821, Oficina 1404
+                  Irarrázaval 2821, Oficina 1404
                 </p>
                 <p className="font-medium text-foreground">Torre B</p>
-                <p className="text-sm text-foreground/70">Nunoa, Santiago, Chile</p>
+                <p className="text-sm text-foreground/70">Ñuñoa, Santiago, Chile</p>
               </div>
             </div>
 
@@ -65,7 +65,7 @@ export function Location() {
                     <span className="font-medium text-foreground">9:00 - 19:00</span>
                   </p>
                   <p className="flex justify-between gap-4">
-                    <span>Sabado:</span>
+                    <span>Sábado:</span>
                     <span className="font-medium text-foreground">9:00 - 14:00</span>
                   </p>
                   <p className="flex justify-between gap-4">

@@ -5,20 +5,20 @@ import { useState } from "react"
 
 const services = [
   {
-    title: "Odontologia General",
+    title: "Odontología General",
     description: "Cuidado integral de tu salud bucal",
     image: "/images/odontogeneral.png",
     color: "bg-primary",
   },
   {
     title: "Ortodoncia",
-    description: "Alineacion perfecta de tus dientes",
+    description: "Alineación perfecta de tus dientes",
     image: "/images/ortodoncia.png",
     color: "bg-secondary",
   },
   {
-    title: "Odontopediatria",
-    description: "Cuidado dental para los mas pequenos",
+    title: "Odontopediatría",
+    description: "Cuidado dental para los más pequeños",
     image: "/images/odontopedia.png",
     color: "bg-primary",
   },
@@ -29,13 +29,13 @@ const services = [
     color: "bg-secondary",
   },
   {
-    title: "Rehabilitacion Oral",
-    description: "Restauracion completa de tu dentadura",
+    title: "Rehabilitación Oral",
+    description: "Restauración completa de tu dentadura",
     image: "/images/ortodoncia.png",
     color: "bg-secondary",
   },
   {
-    title: "Estetica Dental",
+    title: "Estética Dental",
     description: "Mejora la apariencia de tu sonrisa",
     image: "/images/estetica.png",
     color: "bg-primary",
@@ -47,7 +47,7 @@ const services = [
     color: "bg-secondary",
   },
   {
-    title: "Estetica Facial",
+    title: "Estética Facial",
     description: "Tratamientos faciales complementarios",
     image: "/images/esteticafacial.png",
     color: "bg-primary",
@@ -66,10 +66,10 @@ export function Services() {
             Lo que hacemos
           </span>
           <h2 className="mb-4 text-balance text-3xl font-bold text-foreground md:text-4xl lg:text-5xl">
-            Que <span className="text-accent">Servicios</span> ofrecemos?
+            ¿Qué <span className="text-accent">Servicios</span> ofrecemos?
           </h2>
           <p className="mx-auto max-w-2xl text-base text-foreground/80 md:text-lg">
-            Estamos a tu disposicion con todos nuestros servicios y personal
+            Estamos a tu disposición con todos nuestros servicios y personal
             especializado que necesites para cuidar tu sonrisa.
           </p>
         </div>

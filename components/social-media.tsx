@@ -70,10 +70,10 @@ export function SocialMedia() {
           Conecta con nosotros
         </span>
         <h2 className="mb-4 text-balance text-3xl font-bold text-foreground md:text-4xl lg:text-5xl">
-          Siguenos en <span className="text-accent">Redes Sociales</span>
+          Síguenos en <span className="text-accent">Redes Sociales</span>
         </h2>
         <p className="mx-auto mb-12 max-w-2xl text-base text-foreground/80 md:text-lg">
-          Mantente al dia con nuestras novedades, consejos de salud bucal y promociones especiales
+          Mantente al día con nuestras novedades, consejos de salud bucal y promociones especiales
         </p>
 
         <div className="flex flex-col items-center justify-center gap-6 sm:flex-row sm:gap-8">
