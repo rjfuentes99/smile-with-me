@@ -84,7 +84,9 @@ export function Services() {
               onMouseLeave={() => setHoveredIndex(null)}
             >
               <div
-                className={`mb-4 flex aspect-square items-center justify-center overflow-hidden rounded-xl ${service.color} transition-all duration-300 ${
+                className={`mb-4 flex aspect-square items-center justify-center overflow-hidden ${
+                  index === 0 ? "rounded-full" : "rounded-xl"
+                } ${service.color} transition-all duration-300 ${
                   hoveredIndex === index ? "scale-105 shadow-lg" : ""
                 }`}
               >
@@ -93,7 +95,9 @@ export function Services() {
                   alt={service.title}
                   width={200}
                   height={200}
-                  className="h-3/4 w-3/4 object-contain transition-transform duration-300 group-hover:scale-110"
+                  className={`transition-transform duration-300 group-hover:scale-110 ${
+                    index === 0 ? "h-full w-full object-cover" : "h-3/4 w-3/4 object-contain"
+                  }`}
                 />
               </div>
               <h3 className="mb-1 text-center text-sm font-bold text-foreground sm:text-base md:text-lg">
