@@ -7,8 +7,9 @@ const services = [
   {
     title: "Odontología General",
     description: "Cuidado integral de tu salud bucal",
-    image: "/images/odontogeneral.png",
+    image: "/images/Odontologia-general-1.jpg",
     color: "bg-primary",
+
   },
   {
     title: "Ortodoncia",
@@ -31,7 +32,7 @@ const services = [
   {
     title: "Rehabilitación Oral",
     description: "Restauración completa de tu dentadura",
-    image: "/images/ortodoncia.png",
+    image: "/images/rehabilitacion-oral-fundas.jpg",
     color: "bg-secondary",
   },
   {
@@ -55,7 +56,6 @@ const services = [
 ]
 
 export function Services() {
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
 
   return (
     <section id="services" className="bg-background py-16 md:py-24">
@@ -80,20 +80,16 @@ export function Services() {
             <div
               key={index}
               className="hover-lift group cursor-pointer rounded-2xl border border-border/50 bg-card/30 p-4 transition-all duration-300 hover:border-accent/30 hover:bg-card sm:p-6"
-              onMouseEnter={() => setHoveredIndex(index)}
-              onMouseLeave={() => setHoveredIndex(null)}
+
             >
               <div
-                className={`mb-4 flex aspect-square items-center justify-center overflow-hidden rounded-xl ${service.color} transition-all duration-300 ${
-                  hoveredIndex === index ? "scale-105 shadow-lg" : ""
-                }`}
+                className={`relative mb-4 flex aspect-square items-center justify-center overflow-hidden rounded-full ${service.color} transition-all duration-300 hover:scale-105 hover:shadow-lg`}
               >
                 <Image
                   src={service.image || "/placeholder.svg"}
                   alt={service.title}
-                  width={200}
-                  height={200}
-                  className="h-3/4 w-3/4 object-contain transition-transform duration-300 group-hover:scale-110"
+                  fill
+                  className="object-cover transition-transform duration-300 hover:scale-110"
                 />
               </div>
               <h3 className="mb-1 text-center text-sm font-bold text-foreground sm:text-base md:text-lg">
