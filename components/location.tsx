@@ -2,6 +2,9 @@ import { MapPin, Calendar, Clock, Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const APPOINTMENT_URL = "https://a259348cdd801055c6e465fe356840cbf43cc129.agenda.softwaredentalink.com/agenda"
+const WHATSAPP_NUMBER = '+56968286054'
+const WHATSAPP_MESSAGE = '¡Hola! Me interesa agendar una cita en Smile With Me Estudio Dental.'
+const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER.replace(/\D/g, '')}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`
 
 export function Location() {
   return (
@@ -84,10 +87,13 @@ export function Location() {
               <div>
                 <h3 className="mb-1 text-lg font-bold text-foreground">Contacto</h3>
                 <a 
-                  href="tel:+56912345678"
+                  href={WHATSAPP_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="font-medium text-accent hover:underline"
+                  aria-label="Contactar por WhatsApp al +56 9 6828 6054"
                 >
-                  +56 9 1234 5678
+                  +56 9 6828 6054
                 </a>
               </div>
             </div>

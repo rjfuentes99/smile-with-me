@@ -95,8 +95,11 @@ export function Footer() {
             <ul className="space-y-4">
               <li>
                 <a 
-                  href="tel:+56968286054" 
+                  href={WHATSAPP_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-3 transition-colors hover:text-accent"
+                  aria-label="Contactar por WhatsApp al +56 9 6828 6054"
                 >
                   <span className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-primary/10">
                     <Phone className="h-5 w-5 text-accent" />
@@ -110,11 +113,12 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 transition-colors hover:text-accent"
+                  aria-label="Escribir por WhatsApp"
                 >
                   <span className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-primary/10">
                     <MessageCircle className="h-5 w-5 text-accent" />
                   </span>
-                  <span className="text-sm sm:text-base">WhatsApp</span>
+                  <span className="text-sm sm:text-base">Escríbenos por WhatsApp</span>
                 </a>
               </li>
               <li>

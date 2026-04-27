@@ -11,9 +11,9 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: 'Smile With Me - Estudio Dental en Santiago | Ortodoncia, Implantes y Estetica Dental',
-  description: 'Clinica dental en Nunoa, Santiago. Especialistas en ortodoncia, implantes dentales, estetica dental, odontopediatria y mas. Atencion personalizada y de alta calidad. Agenda tu cita online.',
-  keywords: ['dentista santiago', 'clinica dental nunoa', 'ortodoncia', 'implantes dentales', 'estetica dental', 'odontopediatria', 'blanqueamiento dental', 'endodoncia'],
+  title: 'Smile With Me - Clínica Dental en Ñuñoa | Vuelve a Sonreír',
+  description: 'Clínica dental en Ñuñoa, Santiago. Especialistas en ortodoncia, implantes dentales, estética dental, odontopediatría y más. Atención personalizada y alta calidad.',
+  keywords: ['clínica dental ñuñoa', 'dentista ñuñoa', 'dentista santiago', 'ortodoncia ñuñoa', 'implantes dentales', 'estética dental', 'odontopediatría', 'blanqueamiento dental', 'endodoncia', 'vuelve a sonreír'],
   authors: [{ name: 'Smile With Me Estudio Dental' }],
   creator: 'Smile With Me Estudio Dental',
   publisher: 'Smile With Me Estudio Dental',
@@ -24,9 +24,9 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: 'Clínica Dental en Ñuñoa | Smile With Me',
+    title: 'Smile With Me - Clínica Dental en Ñuñoa | Vuelve a Sonreír',
     description:
-      'Tu sonrisa es nuestra prioridad. Clínica dental en Ñuñoa con atención personalizada, tecnología moderna y especialistas certificados.',
+      'Clínica dental en Ñuñoa, Santiago. Especialistas en ortodoncia, implantes dentales, estética dental, odontopediatría y más. Atención personalizada y alta calidad.',
     url: 'https://www.smilewithme.cl',
     siteName: 'Smile With Me',
     locale: 'es_CL',
