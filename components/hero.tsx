@@ -15,17 +15,18 @@ export function Hero() {
         {/* Content */}
         <div className="text-center lg:text-left">
           <span className="animate-fade-in mb-4 inline-block rounded-full bg-accent/10 px-4 py-2 text-sm font-medium text-accent">
-            Tu clínica dental de confianza
+            Tu clínica dental de confianza en Ñuñoa
           </span>
           <h1 className="animate-fade-in-up mb-6 text-balance text-4xl font-bold leading-tight text-foreground sm:text-5xl md:text-6xl">
-            Los <span className="text-accent">mejores</span>
+            Vuelve a <span className="text-accent">Sonreír</span>
             <br />
-            para tu bienestar
+            en tu Clínica Dental
           </h1>
           <p className="animate-fade-in-up animation-delay-100 mb-8 max-w-xl text-base leading-relaxed text-foreground/80 sm:text-lg lg:mx-0">
-            Tu sonrisa es nuestra prioridad. En nuestra clínica dental, nos
-            comprometemos a ofrecerte una atención personalizada y de calidad,
-            donde tu comodidad y satisfacción son fundamentales en cada visita.
+            Tu sonrisa es nuestra prioridad. En nuestra clínica dental en Ñuñoa,
+            nos comprometemos a ofrecerte una atención personalizada y de alta
+            calidad, con especialistas en ortodoncia, implantes dentales y
+            estética dental para que vuelvas a sonreír con confianza.
           </p>
           <div className="animate-fade-in-up animation-delay-200 flex flex-col gap-4 sm:flex-row sm:justify-center lg:justify-start">
             <Button

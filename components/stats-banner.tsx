@@ -36,10 +36,13 @@ function StatItem({ value, label, isVisible }: StatItemProps) {
 
   return (
     <div className="px-4 py-2">
-      <h3 className="text-4xl font-bold text-accent md:text-5xl lg:text-6xl">
+      <span className="block text-4xl font-bold text-accent md:text-5xl lg:text-6xl" aria-hidden="true">
         {displayValue}
-      </h3>
-      <p className="mt-2 text-base text-background md:text-lg">{label}</p>
+      </span>
+      <p className="mt-2 text-base text-background md:text-lg">
+        <span className="sr-only">{displayValue} </span>
+        {label}
+      </p>
     </div>
   )
 }
